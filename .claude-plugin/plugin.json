@@ -1,0 +1,30 @@
+{
+  "name": "cache-warmth",
+  "version": "0.2.0",
+  "description": "A band above the prompt: prompt-cache warmth with a draining heat bar, a context-size gauge and a session token tally.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "ttl": {
+      "type": "string",
+      "title": "Prompt cache TTL",
+      "description": "How long the prompt cache lives after the last request.",
+      "options": [
+        "1h",
+        "5m"
+      ],
+      "default": "1h"
+    },
+    "handoffAt": {
+      "type": "string",
+      "title": "Context handoff threshold",
+      "description": "Context size at which the gauge turns red (time for a handoff and a fresh session).",
+      "options": [
+        "300k",
+        "250k",
+        "400k",
+        "500k"
+      ],
+      "default": "300k"
+    }
+  }
+}

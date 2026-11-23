@@ -1,0 +1,5 @@
+{
+  "name": "local-mods",
+  "owner": { "name": "local" },
+  "plugins": [{ "name": "cache-warmth", "source": "./" }]
+}
